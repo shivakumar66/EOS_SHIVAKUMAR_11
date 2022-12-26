@@ -14,7 +14,7 @@ int main()
     int mq_sender,mq_reciever,mq_closer;
      usr_mq_attr.mq_flags =0;
     usr_mq_attr.mq_maxmsg = 4;
-    usr_mq_attr.mq_msgsize=64;
+    usr_mq_attr.mq_msgsize=1024;
     usr_mq_attr.mq_curmsgs =0;
     usr=mq_open("/desd_mq",O_RDWR,S_IRUSR | S_IWUSR,&usr_mq_attr);
     if(-1==usr)
